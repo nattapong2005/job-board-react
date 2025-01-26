@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav className="peer-checked:block hidden  py-6 sm:block sm:py-0 ">
           <ul className="flex flex-col gap-y-3 sm:flex-row sm:gap-x-8 sm:items-center ">
             <li className='group relative w-max'><NavLink to="/" className="flex items-center gap-2  text-gray-600" >หางาน</NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-blue-900 group-hover:w-full"></span></li>
-            <li className='group relative w-max'><NavLink to="/" className="flex items-center gap-2  text-gray-600" >ประกาศงาน</NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-blue-900 group-hover:w-full"></span></li>
+            <li className='group relative w-max'><NavLink to="/post" className="flex items-center gap-2  text-gray-600" >ประกาศงาน</NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-blue-900 group-hover:w-full"></span></li>
             {/* <li className='group relative w-max'><NavLink to="/about" className="flex items-center gap-2  text-gray-600" >เกี่ยวกับ</NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-blue-900 group-hover:w-full"></span></li> */}
             <li className='group relative w-max bg-blue-900 py-1.5 px-3 rounded-md hover:bg-blue-700'><NavLink to="/login" className="flex items-center gap-2  text-white" >เข้าสู่ระบบ</NavLink><span className="absolute -bottom-1 left-0 w-0 "></span></li>
           </ul>

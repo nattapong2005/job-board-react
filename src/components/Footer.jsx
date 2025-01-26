@@ -55,7 +55,7 @@ const Footer = () => {
             >
               <img
                 className="w-8 cursor-pointer"
-                src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
                 alt="Facebook"
               />
             </a>
@@ -65,7 +65,7 @@ const Footer = () => {
             >
               <img
                 className="w-8 cursor-pointer"
-                src="https://cdn-icons-png.flaticon.com/512/124/124021.png"
+                src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png"
                 alt="Twitter"
               />
             </a>
@@ -80,8 +80,8 @@ const Footer = () => {
               />
             </a>
           </div>
-          <p className="mt-2 dark:text-gray-300">Email: support@fastjob.com</p>
-          <p className="dark:text-gray-300">Tel: 02-123-4567</p>
+          <p className="mt-2 dark:text-gray-300">support@fastjob.com</p>
+          <p className="dark:text-gray-300">02-123-4567</p>
         </div>
       </div>
 

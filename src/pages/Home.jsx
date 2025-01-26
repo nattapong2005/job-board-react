@@ -74,7 +74,10 @@ const Home = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-8">งานที่มาแรง</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.categories.map((category, index) => (
-            <div key={index} className="flex items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div
+              key={index}
+              className="flex items-center bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer"
+            >
               <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full text-blue-600 text-2xl">
                 {category.icon}
               </div>
@@ -92,10 +95,11 @@ const Home = () => {
       {/* Trusted By Section */}
       <section className="container mx-auto px-4 py-10">
         <h1 className="font-bold text-lg text-blue-900">Trusted by</h1>
-        <h2 className="text-3xl font-bold  mb-8">
-          ได้รับความไว้วางใจจาก
-        </h2>
-        <Slider {...settings} className="w-full max-w-5xl mx-auto cursor-pointer">
+        <h2 className="text-3xl font-bold  mb-8">ได้รับความไว้วางใจจาก</h2>
+        <Slider
+          {...settings}
+          className="w-full max-w-5xl mx-auto cursor-pointer"
+        >
           {data.companies.map((c, index) => (
             <div key={index} className="flex justify-center">
               <img src={c.img} className="h-28 object-contain mx-auto" />
@@ -109,7 +113,10 @@ const Home = () => {
         <h2 className="text-3xl font-bold  mb-6">งานแนะนำสำหรับคุณ</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.jobs.map((job, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
               <div className="flex items-center mb-4">
                 <img
                   src={job.logo}
@@ -137,28 +144,74 @@ const Home = () => {
 
       {/* Main Features */}
       <section className="container mx-auto px-4 py-10">
-      <h1 className="text-blue-900 font-bold">Main Features</h1>
-      <h2 className="text-3xl font-bold mb-6">ฟีเจอร์หลัก</h2>
-      <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-28">
-          <div className="card max-w-md  p-6 flex flex-col items-center">
-            <img className="w-32 mb-5" src="/icon/company.png" alt="สำหรับบริษัท" />
-            <h1 className="text-center text-xl font-bold text-blue-900">สำหรับบริษัท</h1>
-            <p className="text-center text-lg mt-2">โพสต์งาน คัดเลือกฟรีแลนซ์ อนุมัติหรือปฏิเสธผู้สมัคร</p>
-          </div>
-          <div className="card max-w-md  p-6 flex flex-col items-center">
-            <img className="w-32 mb-5" src="/icon/freelance.png" alt="สำหรับฟรีแลนซ์" />
-            <h1 className="text-center text-xl font-bold text-blue-900">สำหรับฟรีแลนซ์</h1>
-            <p className="text-center text-lg mt-2">ค้นหางาน สมัครงาน และติดตามสถานะการสมัคร</p>
-          </div>
-          <div className="card max-w-md  p-6 flex flex-col items-center">
-            <img className="w-32 mb-5" src="/icon/profile.png" alt="โปรไฟล์ของคุณ" />
-            <h1 className="text-center text-xl font-bold text-blue-900">โปรไฟล์ของคุณ</h1>
-            <p className="text-center text-lg mt-2">อัปเดตข้อมูลส่วนตัวและแสดงความสามารถของคุณ</p>
+        <h1 className="text-blue-900 font-bold">Main Features</h1>
+        <h2 className="text-3xl font-bold mb-6">ฟีเจอร์หลัก</h2>
+        <div className="flex justify-center items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-28">
+            <div className="card max-w-md  p-6 flex flex-col items-center">
+              <img
+                className="w-32 mb-5"
+                src="/icon/company.png"
+                alt="สำหรับบริษัท"
+              />
+              <h1 className="text-center text-xl font-bold text-blue-900">
+                สำหรับบริษัท
+              </h1>
+              <p className="text-center text-lg mt-2">
+                โพสต์งาน คัดเลือกฟรีแลนซ์ อนุมัติหรือปฏิเสธผู้สมัคร
+              </p>
+            </div>
+            <div className="card max-w-md  p-6 flex flex-col items-center">
+              <img
+                className="w-32 mb-5"
+                src="/icon/freelance.png"
+                alt="สำหรับฟรีแลนซ์"
+              />
+              <h1 className="text-center text-xl font-bold text-blue-900">
+                สำหรับฟรีแลนซ์
+              </h1>
+              <p className="text-center text-lg mt-2">
+                ค้นหางาน สมัครงาน และติดตามสถานะการสมัคร
+              </p>
+            </div>
+            <div className="card max-w-md  p-6 flex flex-col items-center">
+              <img
+                className="w-32 mb-5"
+                src="/icon/profile.png"
+                alt="โปรไฟล์ของคุณ"
+              />
+              <h1 className="text-center text-xl font-bold text-blue-900">
+                โปรไฟล์ของคุณ
+              </h1>
+              <p className="text-center text-lg mt-2">
+                อัปเดตข้อมูลส่วนตัวและแสดงความสามารถของคุณ
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Register us */}
+      <section className="bg-slate-100 mt-5 mb-5 text-white py-20 text-center shadow-lg">
+        <div className="container mx-auto flex justify-between items-center">
+          <div className="job">
+            <h1 className="text-4xl text-blue-900 font-bold mb-4">
+              ร่วมเป็นส่วนหนึ่งกับเรา
+            </h1>
+            <p className="text-xl text-blue-900  mb-8">
+              แพลตฟอร์มที่รวมงานที่ดี และคนเก่ง ไว้ในที่เดียว
+            </p>
+            <div className="flex justify-center gap-4">
+              <button className="bg-blue-800 border border-white text-white px-6 py-3 rounded-lg font-bold">
+                ลงทะเบียนตอนนี้
+              </button>
+            </div>
+          </div>
+          <div>
+            <img width={300} src="./icon/job.svg" alt="" />
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
